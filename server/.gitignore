@@ -1,5 +1,3 @@
 node_modules
-public/conversation/*
-public/user/*
 src/environment/.env.development
 src/environment/.env.production
