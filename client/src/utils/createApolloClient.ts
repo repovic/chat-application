@@ -40,14 +40,14 @@ export default () => {
     });
 
     const uploadLink = createUploadLink({
-        uri: `${process.env.NEXT_PUBLIC_GRAPHQL_URI}`,
+        uri: process.env.NEXT_PUBLIC_GRAPHQL_URI,
         credentials: "include",
     });
 
     let activeSocket: any, timedOut: any;
     const wsLink = new GraphQLWsLink(
         createClient({
-            url: `ws://${process.env.NEXT_PUBLIC_SUBSCRIPTIONS_URI}`,
+            url: process.env.NEXT_PUBLIC_SUBSCRIPTIONS_URI as string,
             connectionParams: {
                 "X-Subscription-Token": subscriptionToken || "",
             },
