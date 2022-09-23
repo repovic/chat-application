@@ -7,27 +7,36 @@ export const CONVERSATION_CREATED = gql`
             name
             participants {
                 _id
+                firstName
+                lastName
                 displayName
                 username
+                email
                 avatar
+                createdAt
+                updatedAt
             }
             lastMessage {
                 _id
                 sender {
                     _id
+                    firstName
+                    lastName
                     displayName
+                    username
+                    email
                     avatar
-                    isOnline
-                    lastOnline
                     createdAt
                     updatedAt
                 }
                 contentType
                 content
                 createdAt
+                updatedAt
             }
             type
             createdAt
+            updatedAt
         }
     }
 `;
@@ -39,15 +48,26 @@ export const CONVERSATION_UPDATED = gql`
             name
             participants {
                 _id
+                firstName
+                lastName
                 displayName
                 username
+                email
                 avatar
+                isOnline
+                lastOnline
+                createdAt
+                updatedAt
             }
             lastMessage {
                 _id
                 sender {
                     _id
+                    firstName
+                    lastName
                     displayName
+                    username
+                    email
                     avatar
                     isOnline
                     lastOnline
@@ -57,9 +77,11 @@ export const CONVERSATION_UPDATED = gql`
                 contentType
                 content
                 createdAt
+                updatedAt
             }
             type
             createdAt
+            updatedAt
         }
     }
 `;
