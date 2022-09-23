@@ -1,6 +1,6 @@
 "use strict";
 
-const cacheVersion = "v1-development";
+const cacheVersion = "v1-production";
 const cacheName = `chat-application-${cacheVersion}`;
 
 const cacheFiles = ["/", "/register", "/login", "/logout"];
