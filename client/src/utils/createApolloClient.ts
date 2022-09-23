@@ -40,7 +40,7 @@ export default () => {
     });
 
     const uploadLink = createUploadLink({
-        uri: `http://${process.env.NEXT_PUBLIC_GRAPHQL_URI}`,
+        uri: `${process.env.NEXT_PUBLIC_GRAPHQL_URI}`,
         credentials: "include",
     });
 
