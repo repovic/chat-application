@@ -68,10 +68,7 @@ function Application({ Component, pageProps }: AppProps) {
                             Chat Application v1.0
                         </span>{" "}
                         | Made by{" "}
-                        <Link
-                            href={"https://www.repovic.ga/project/portfolio"}
-                            passHref={true}
-                        >
+                        <Link href={"https://www.repovic.dev"} passHref={true}>
                             <a target="_blank" rel="noopener noreferrer">
                                 <span className="inline-flex items-center gap-1 font-bold underline text-primary cursor-pointer">
                                     Vasilije Repović{" "}
